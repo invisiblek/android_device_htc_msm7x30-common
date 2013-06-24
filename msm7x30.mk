@@ -53,6 +53,11 @@ PRODUCT_COPY_FILES += \
     device/htc/msm7x30-common/audio_policy.conf:system/etc/audio_policy.conf
 endif
 
+# Sensors
+PRODUCT_PACKAGES += \
+    lights.msm7x30 \
+    sensors.msm7x30
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
