@@ -71,6 +71,7 @@ PRODUCT_PACKAGES += \
 # Misc
 PRODUCT_PACKAGES += \
     DeviceSettings \
+    libnetcmdiface \
     com.android.future.usb.accessory
 
 # Live Wallpapers
