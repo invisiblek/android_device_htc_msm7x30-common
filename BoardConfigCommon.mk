@@ -19,6 +19,7 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/msm7x30-common/overlay
 TARGET_BOARD_PLATFORM := msm7x30
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
 
+
 # Vendor
 BOARD_VENDOR := htc
 
@@ -27,9 +28,10 @@ TARGET_NO_BOOTLOADER := true
 
 # Architecture
 TARGET_ARCH := arm
+TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_CPU_VARIANT := cortex-a8
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
-TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
 ARCH_ARM_HAVE_VFP := true
 ARCH_ARM_HAVE_NEON := true
