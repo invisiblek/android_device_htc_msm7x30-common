@@ -72,7 +72,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DeviceSettings \
     libnetcmdiface \
-    com.android.future.usb.accessory
+    com.android.future.usb.accessory \
+    libsurfaceflinger_client
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
