@@ -51,6 +51,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.primary.msm7x30 \
+    audio_policy.msm7x30 \
     libaudioutils
 
 # Video
@@ -87,8 +88,27 @@ PRODUCT_PACKAGES += \
     make_ext4fs \
     setup_fs
 
+# Common build.prop overrides
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sys.fw.bg_apps_limit=12
+    ro.com.google.locationfeatures=1 \
+    ro.com.google.networklocation=1 \
+    ro.com.google.gmsversion=4.0_r1 \
+    ro.setupwizard.enable_bypass=1 \
+    dalvik.vm.lockprof.threshold=500 \
+    dalvik.vm.dexopt-flags=m=y \
+    ro.bq.gpu_to_cpu_unsupported=1 \
+    ro.config.low_ram=true \
+    persist.sys.usb.config=mass_storage,adb
+
+# msm7x30 specific overrides
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.fw.bg_apps_limit=12 \
+    com.qc.hardware=true \
+    debug.egl.hw=1 \
+    debug.sf.hw=1 \
+    debug.mdpcomp.logs=0 \
+    dev.pm.dyn_samplingrate=1 \
+    ro.opengles.version=131072
 
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
