@@ -96,7 +96,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enable_bypass=1 \
     dalvik.vm.lockprof.threshold=500 \
     dalvik.vm.dexopt-flags=m=y \
-    ro.bq.gpu_to_cpu_unsupported=1 \
+    ro.zygote.disable_gl_preload=true \
     ro.config.low_ram=true \
     persist.sys.usb.config=mass_storage,adb
 
