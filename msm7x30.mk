@@ -43,6 +43,7 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4329
 
 # Device-Specific HALs
 PRODUCT_PACKAGES += \
+    camera.msm7x30 \
     lights.msm7x30 \
     sensors.msm7x30 \
     power.msm7x30
