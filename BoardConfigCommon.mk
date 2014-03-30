@@ -35,7 +35,7 @@ TARGET_ARCH_LOWMEM := true
 
 # Kernel
 BUILD_KERNEL := true
-TARGET_KERNEL_SOURCE := kernel/htc/msm7x30-3.0
+TARGET_KERNEL_SOURCE := kernel/htc/msm7x30
 
 # Wifi
 WIFI_BAND := 802_11_ABGN
